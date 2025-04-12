@@ -1,0 +1,506 @@
+20/09/2024
+Fixed question not showing to student
+Fixed some slight errors in parse equations was using the old 1D array changed it
+Fixed the quick bar showing in students
+Fixed add item replace in staff was using wrong id
+Fixed auto new question
+Added admin accounts
+
+21/09/2024
+Added XML/HTML tags parsing in pasting
+Added dynamic title gen
+Fixed small bugs
+Added version tag
+
+22/09/2024
+Added bootstrap to questions
+Added bootstrap to profile
+Add settings page
+Added bootstrap to settings
+Added bootstrap to index
+Fixed right click not working
+Added footer
+Added the dev menu on pages
+
+24/09/2024
+Added logout/login buttons
+Added logout
+Added login redirect
+Fixed button location pointers
+Added version and build date to the footer
+
+26/09/2024
+Added question_stats which keeps logs of question attempts
+Added graphs in the dev view of each question to see where people are failing
+Change vars to no longer needing a right click to create new one
+Fixed bug in creating new var
+Fixed other bugs
+
+28/09/2024
+Added a section to see completed questions
+Added security to the api stopping none staff from access result data
+Added stats page
+Shows info about question that where done by the user
+Added the task table and to API
+Can see active tasks in the profile
+Can see active tasks in the index
+Added the ability to see the location of your question toggleable in settings page
+Change the formual output to span from input
+Change the way to access other modes, to dropdown rename dev mode to stats mode to better show what it does
+
+
+30/09/2024
+Added sub menus to the questions page
+- INSERT MENU VAR/TABLES
+- DATA CHANGE DATA TYPES OF VARS
+- VIEW CHANGE THE CURRENT VIEW
+
+01/10/2024
+Fixed bug that could allow one to save the add item temp text
+Add the ability to make question private or public
+Added the admin page
+- Can see total user
+- Can see total question
+- Can see total question of public and private questions
+Fixed change type not working
+
+02/10/2024 
+Fixed the ability that drop down var menu not working on chrome/ie
+
+03/10/2024 (1.4.d) (PC/Android Firefox) (Local/Global)
+Remove bootstrap item to allow nav bar to show on mobile
+Added the ability to toggle the full file path in profile
+Upgraded to bootstrap 5.x
+Added the ability to change the name of variables
+
+04/10/2024 (1.4.e) (PC Firefox) (Local/Global)
+Sorted questions in profile by org/subject/topic
+All filepath info of question is now always return by api instead of looking for cookie
+Change the may questions are search for, now has auto complete when providing the first letters of the name
+Added the ability to change topic of a question to the API (setQuestionTopic takes newT as var, (isStaff && isQOwner) | isAdmin))
+Add the ability to change topic of question in question.php
+
+05/10/2024 (1.4.f) (PC Firefox) (Local/Global)
+Fixed sorting in questions (subject -> topic was flipped)
+Built framework for efficiency increase in the future to API (userORG)
+Change org to be a JSON instead of int in users table
+Added the ability to change question for any uni user is with
+Now shows org in user settings
+Can now filter by ORG in admin to see users
+
+07/10/2024 (1.5.0) (PC Firefox) (Local/Global)
+Fixed the overflow of questions in index
+Moved the button bar 
+	- Save now in the top bar right
+	- And student items show in the student bar in the top bar
+Fixed a bug in checkValues API
+Some UI chanes to buttons
+Add the course.php file 
+Add the bug.php file to report bugs and new items
+
+08/10/2024 (1.5.0.a) (PC Firefox) (Local/Global)
+Fixed a bug that where you couldnt get table info when selected
+
+10/10/2024 (1.5.0.b) (PC Firefox) (Local/Global)
+Added the ability to get user info from api
+Added the ability to see user info in the admin page
+
+21/10/2024 (1.5.0.c) (PC Firefox) (Local/Global)
+Added menu buttons to dev
+Added more info to each bug
+Added the ability to open each bug
+Added the ability to send messages
+Added the ability to resolve bugs
+
+22/10/2024 (1.5.1) (PC/Android Firefox) (Local/Global)
+Change org table now it stores state, postcode,suburb,type as well
+Add all unis to table 
+Now a person searchs for the org instead of scrolling
+
+23/10/2024 (1.5.1.a) (PC/Android Firefox) (Local/Global)
+Change the profile to collapsible dropdown
+
+25/10/2024 (1.5.1.b) (PC Firefox) (Local)
+Added the ability to get perms and groups
+Automatic replaces group names with domain targets
+Added section to make new groups
+Added getGroups, getPerms to api
+Can add new groups
+Can add items to groups
+
+26/10/2024 (1.5.1.c) (PC Firefox) (Local)
+Fix some bugs
+Started adding the framework for user perms additions
+
+27/10/2024 (1.5.1.d) (PC Firefox) (Local)
+Maked bugs show if they are resolved
+Finished the perm setting for users
+Ensured permissions are being watched
+Added the ability to see roles in the perms section
+
+30/10/2024 (1.5.1.f) (PC Firefox) (Local)
+Fixed some bugs in the manegment page
+Add some basic perm structure
+Fixed that you couldn't remove role
+
+
+5/11/2024 (1.5.2.0) (PC/Android Firefox) (Local)
+Fixed the ability to not press questions in profile
+Change some settings to allow for admin to see the graphs if the phone is rotated
+You can now report bugs by press Ctrl + Alt + B
+Fixed some UI issues, and made more default data stored in the bugs JSON object
+Added the ability to load the info of a user from bugs for admin
+
+20/11/2024 (1.5.2.1)
+Add the tasks page
+
+23/11/2024 (1.5.2.1.a)
+Add new api call for task creation and task getting
+Now loads the users for each org depending on question chosen
+
+6/12/2024 (1.5.2.2)
+Changed the login page
+Small bug fixs
+Add the inDomain and hasRole check in api and fixed some perm locking, moving from bool base perms to the new perm manager
+Add some small changes such as message box when there is no awnser
+
+11/12/2024 (1.5.2.3)
+Changing type now shows in the text without needing to reload
+Changing item var shows in the text without needing to reload
+Changing item name shows in the text without needing to reload
+Fixed bug with remove not removing all items instance
+Fixed bug with storing var in answers in then saving it will cause it to display as staff view not as a number in student view
+Fixed the way the system turns the JSON to visual vars and made it more effective and reliable
+
+12/12/2024 (1.6) (Bug/UX Fixes & Adding Features)
+Made it change topic also show which subject & org its from
+change Super Admin from needing perms for each item to being part of a custom org
+when opening a question it will automaticly open in edit mode if you have perms
+added more detailed comments to staff.js
+
+16/12/2024 (1.6.1) (Bug/UX Fixes & Adding Features)
+Add getAllData takes uni ID returns all subject-topic-question
+Question dropdown menu now in the index page as well
+Add bunch of search options for index.php
+
+19/12/2024 (1.6.1.1)
+Made the code look cleaner
+
+22/12/2024 (1.6.1.2)
+Added 
+	- word document reader 
+	- word document reader auto gives tables ids
+	- framework to allow for word document based question loading
+Fixs
+	- right clicking variable name not updating in quick bar
+	- was able to find private questions
+	- fixed signup when user found not login in
+	- fixed signup not taking user org
+	- fixed signup not setting correct perms
+	- extra space when selecting a value
+	- loadInfo now works, and will correctly show the visual variables
+	- race condition for getting question data and the item being created
+UI 
+	- Add copyright and fixed the footer
+	- Added some colors to some buttons and made it more uniform
+
+
+23/12/2024 (1.6.1.3)
+Fixs
+	- Dump info was using the old replace method and was giving odd results
+	- Submit was making the solution text to raw json
+	- Second parse had a bug in equation loader, it used the raw and not the clean data causing it to "eat" html items
+Added
+	- Can now create questions using a word document as a base
+	- Can now create questions using the question data string (dumped question info)
+
+24/12/2024 (1.6.1.4)
+Fixs
+	- Logout not working 
+	- Visual var loader, didnt refrence item correctly
+Added
+	- Can remove questions from db
+	- Add security log for login requests
+
+30/12/2024 (1.6.1.5)
+Change
+	- Change the way tasks are shown in profile to have more info and to be cleaner
+	- Changed the API for get task to use a one line SQL and updated to newer SQL statment
+UI
+	- Slight changes to index
+
+1/1/2025 (1.6.1.6)
+UI
+	- Made index and create questions nicer
+Added 
+	- Org name shows in create question
+
+6/1/2025 (1.6.1.7)
+Changed 
+	- Questions can be searched on index in a new way
+Added
+	- Added the more info button to the search options
+
+11/01/2025 (1.6.1.8)
+Added 
+	- SCP/SSL/etc
+
+14/01/2025 (1.6.2)
+Fixed
+	- Text bugs
+	- Uni in search questions not url decoding
+Added 
+	- Empty check for create question & red outline when empty
+
+15/01/2025 (1.6.2.1)
+Fixed
+	- Insert bugs
+	- Closed button not have X
+	- Creating a variable replace spaces with _
+Changed 
+	- It now show question name not id, in full profile section in question
+Added
+	- Bootstrap to the add item UI elements
+
+16/01/2025 (1.6.2.2)
+Changed
+	- Some text and made it cleaner in the questions section
+Added
+	- Add the option the choses different input types
+Fixed
+	- Awnsers not working
+	- Uni name in index in order
+	- Dump info not having close button
+	- Searching an org in admin didn't show the amount of question for that org
+
+18/01/2025 (1.6.3)
+Fixed
+	- Onclick not working in chrome
+	- Shows the range in table
+	- Can save comma numbers
+	- Can show comma numbers
+	- Rewrote the parser
+Added
+	- Reset password
+
+19/01/2025 (1.6.3.1)
+Fixed
+	- () not working in equation if next to another ()
+	- Fixed check val
+Added 
+	- Quick add paramater button
+	- Export paramaters button
+	- Sorted the translation table
+	- Sorted the dropdowns in elements
+	- Toggleable random
+Changed
+	- Wording in equation where it can't find the var
+
+20/01/2025 (1.6.3.2)
+Added
+	- Question chat api 
+	- Can send and recive message
+	- Auto reload for questions
+	- Tutor.php
+
+21/01/2025 (1.6.3.3)
+Added 
+	- Dragable chat menu in tutor
+Fixed 
+	- Awnser and equation in api
+
+22/01/2025 (1.6.3.4)
+Added 
+	- Import file reader
+
+Fixed
+	- Tutor not showing right question info
+	- Question checkValues
+Changed
+	- Solve EQ on JS now works on ID's not names
+	- Rebuilt the chat system
+
+
+23/01/2025 (1.6.3.5)
+Added 
+	- Import function
+	- Time type (now(), day(), year(), month())
+
+24/01/2025 (1.6.3.5.1)
+Added 
+	- answerText type, works the same as an answer field but checks if the input matchs the text set
+Changed
+	- updated the way replace text work, its now more reliable 
+
+26/01/2025 (1.6.3.5.2)
+Added
+	- Auto checking checkValues
+Changed
+	- CheckValues now is less recurisive 
+
+29/01/2025 (1.6.4)
+Added 
+	- Resizable windows to question
+	- Backbone for sessions
+	- Can paste in equations in input for student
+Changed
+	- Looked down the system, users now need to be loged in for anything
+
+
+31/01/2025 (1.6.5)
+Added
+	- Email address validator client
+	- getStatsSession
+	- getShortCode
+	- getSessionID
+	- session document and page to join sessions
+Changed
+	- Redid the session management, now have short codes which link to a unique session, these short codes have a life span of 3 hours
+	- CheckValues will now work with sessions
+	- getQuestion will now work with sessions
+
+3/02/2025 (1.6.5.1)
+Added
+	- sub domains
+		- dev. will now hold the dev build
+Changed
+	- The way the api gets url paramaters is now standardized so it works no mater if you are running it localy or not
+
+4/02/2025 (1.6.5.2)
+Added
+	- InstanceID to sessionInfo
+	- In presentation mode it will now remove the toggle button, also add the ability for it to load the scripts from the requests inside the loadScripts item
+Changed
+	- Updated chart.js to 4.4.7
+Fixed
+	- Hoverinfo cutting off
+	- icons folder is banned? changed the name to pics
+	- bug in random range option in question
+
+5/02/2025 (1.6.6)
+Added
+	- SessionCreator.php allows for the creation of sessions changed from the old method allows for more detailed sessions options
+
+6/02/2025 (1.6.7)
+Added
+	- added subDocuments 
+	- added documents
+	- function to create document data from table
+	- can link tables to document for auto change
+Fixed
+	- findvars
+
+7/02/2025 (1.6.7.1)
+Added
+	- function for turning the student made table to JSON
+	- Adding a document will make it show up as a 1 row large table in student view where the student can add rows and sections as they please as to ensure they can provide the awnser for any size
+Changed 
+	- new structes for the document storage
+	- tableToDocument now outputs JSON as to be compitable with the client request
+
+9/02/2025 (1.6.7.2)
+Added
+	- Automatic table fix
+	- Keeps track of the last open tab
+	- Dropdown text options
+
+11/02/2025 (1.6.7.3)
+Added 
+	- Can join session no login	
+	- Can post awnsers in session without login
+Fixed
+	- Dropdown now is yellow
+	- Trim on values
+
+12/02/2025 (1.6.7.4)
+Added
+	- Can now switch between questions in a session
+	- Click code to copy link
+	- Can join session via link
+	- QR code to join
+
+15/02/2025 (1.6.7.5)
+Added
+	- Format manager (b,u,i, custom font size)
+	- Animation class 
+	- Can add the animation attributes to vars and text
+Changed
+	- Add subsubtab system
+
+16/02/2025 (1.6.7.6)
+Added
+	- Basic animations now work
+
+17/02/2025 (1.6.7.7)
+Added
+	- Can see animation order
+	- Table dropdown sections
+	- Can set background color
+
+21/02/2025 (1.6.7.8)
+Added
+	- UI fixs
+Fixed
+	- Check Value and check values not using session info
+
+22/02/2025 (1.6.7.9)
+Added
+	- Can now set col specific type and values, e.i dropdown using this list
+	- Values set for document on serverside
+	- Can set text to show in document
+
+23/02/2025 (1.6.7.10)
+Added
+	- When awnsering input with = it will show the value below
+Fixed
+	- Whitespace encoding in tableToDocument causing it to break sometimes
+	- Check Value, didnt have randomActive global flag
+	- Changes instanceID when toggling set base values in session manager
+
+24/02/2025 (1.6.7.11)
+Fixed
+	- Set dropdown now works
+	- Check Values, didnt have randomActive global flag
+
+27/02/2025 (1.6.8)
+Added
+	- Session results are now linked to a unique session id, so that means there a unique results.
+	- Can see how many people are in the session
+
+1/03/2025 (1.6.8.1)
+Added
+	- Automatic equation fix
+
+2/03/2025 (1.6.8.2)
+Added
+	- Core for formating table
+	- The top is now stuck and will not move in scrolling
+Fixed 
+	- Loading question was slow with large question, is now around 10x faster
+	- If the first parse step in staff doesn't work it will default to a slower method
+	- If a question was random then set to normal it would not display
+
+9/03/2025 (1.6.8.3)
+Added
+	- Change row width
+
+11/03/2025 (1.6.8.4)
+Added
+	- Change table width
+Changed
+	- Change the UI for the format window
+
+16/03/2025 (1.6.8.5)
+Changed
+	- Items non-loggedin users sees
+	- Changed the way info is shown the session owners
+Bug
+	- When a session owner joins out of order they can't get any info back
+Fixed
+	- Format table and text visable
+
+23/03/2025 (1.6.9)
+Added
+	- Sections option
+Fixed 
+	- UI bug (height not being correct size on none staff view)

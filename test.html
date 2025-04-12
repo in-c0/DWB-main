@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Toggle Example</title>
+    <style>
+       /* Basic styling */
+		.extra-info {
+			display: none; /* Initially hide the extra information */
+			margin-top: 10px;
+			padding: 10px;
+			background-color: #f0f0f0;
+			/* Remove border */
+			border: none;
+		}
+
+		.toggle-btn {
+			padding: 10px;
+			background-color: #4CAF50;
+			color: white;
+			border: none; /* Remove border */
+			cursor: pointer;
+		}
+    </style>
+</head>
+<body>
+
+    <h2>Dropdown to Show/Hide Information</h2>
+
+    <button class="toggle-btn" onclick="toggleInfo()">Show More Information</button>
+
+    <div class="extra-info" id="extraInfo">
+        <h3>Extra Information:</h3>
+        <p>This is some extra information that can be toggled on or off using the button above.</p>
+    </div>
+
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById("extraInfo");
+            var button = document.querySelector(".toggle-btn");
+            
+            // Check if the information is currently hidden
+            if (info.style.display === "none") {
+                info.style.display = "block";
+                button.textContent = "Show Less Information"; // Change button text
+            } else {
+                info.style.display = "none";
+                button.textContent = "Show More Information"; // Change button text back
+            }
+        }
+    </script>
+
+</body>
+</html>

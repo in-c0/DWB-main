@@ -1,0 +1,149 @@
+id,name,state,postcode,suburb,type
+1,Charles Sturt University,NSW,,,uni
+2,Macquarie University,NSW,,,uni
+3,Southern Cross University,NSW,,,uni
+4,The University of New England,NSW,,,uni
+5,The University of Newcastle,NSW,,,uni
+6,The University of Sydney,NSW,,,uni
+7,University of New South Wales,NSW,,,uni
+8,University of Technology Sydney,NSW,,,uni
+9,University of Wollongong,NSW,,,uni
+10,Western Sydney University,NSW,,,uni
+11,Private Universities (Table B),NSW,,,uni
+12,Not applicable,NSW,,,uni
+13,Private Universities (Table C),NSW,,,uni
+14,Not applicable,NSW,,,uni
+15,Other Approved Higher Education Institutions,NSW,,,uni
+16,Academy of Information Technology,NSW,,,uni
+17,Alphacrucis College,NSW,,,uni
+18,Australasian College of Health and Wellness,NSW,,,uni
+19,Australian Academy of Music and Performing Arts,NSW,,,uni
+20,Australian College of Applied Psychology,NSW,,,uni
+21,"Australian Film, Television and Radio School",NSW,,,uni
+22,"Australian Institute of Management Education &
+Training",NSW,,,uni
+23,Australian Institute of Music,NSW,,,uni
+24,Australian National Institute of Management and Commerce,NSW,,,uni
+25,Avondale College of Higher Education,NSW,,,uni
+26,Campion College,NSW,,,uni
+27,Excelsia College,NSW,,,uni
+28,Health Education & Training Institute,NSW,,,uni
+29,Higher Education Leadership Institute,NSW,,,uni
+30,"International College of Management, Sydney",NSW,,,uni
+31,JMC Academy,NSW,,,uni
+32,Kaplan Business School,NSW,,,uni
+33,Kaplan Higher Education,NSW,,,uni
+34,Kent Institute Australia,NSW,,,uni
+35,Kings Own Institute,NSW,,,uni
+36,Macleay College,NSW,,,uni
+37,Moore Theological College,NSW,,,uni
+38,Morling College,NSW,,,uni
+39,Nan Tien Institute,NSW,,,uni
+40,National Art School,NSW,,,uni
+41,S P Jain School of Global Management,NSW,,,uni
+42,SAE Creative Media Institute,NSW,,,uni
+43,Study Group Australia Pty Ltd,NSW,,,uni
+44,Sydney College of Divinity,NSW,,,uni
+45,Sydney Institute of Business and Technology,NSW,,,uni
+46,Sydney Institute of Traditional Chinese Medicine,NSW,,,uni
+47,TAFE NSW,NSW,,,uni
+48,Tabor College NSW,NSW,,,uni
+49,The Australian College of Physical Education,NSW,,,uni
+50,The Australian Institute of Theological Education,NSW,,,uni
+51,The College of Law,NSW,,,uni
+52,The National Institute of Dramatic Art,NSW,,,uni
+53,Think: Colleges Pty Ltd,NSW,,,uni
+54,UOW College,NSW,,,uni
+55,UTS:INSEARCH,NSW,,,uni
+56,Universal Business School Sydney (UBSS),NSW,,,uni
+57,Wentworth Institute,NSW,,,uni
+58,Whitehouse Institute of Design; Australia,NSW,,,uni
+59,Deakin University,VIC,,,uni
+60,Federation University Australia,VIC,,,uni
+61,La Trobe University,VIC,,,uni
+62,Monash University,VIC,,,uni
+63,RMIT University,VIC,,,uni
+64,Swinburne University of Technology,VIC,,,uni
+65,The University of Melbourne,VIC,,,uni
+66,Victoria University,VIC,,,uni
+67,Private Universities (Table B),VIC,,,uni
+68,University of Divinity,VIC,,,uni
+69,Private Universities (Table C),VIC,,,uni
+70,Not applicable,VIC,,,uni
+71,Other Approved Higher Education Institutions,VIC,,,uni
+72,Australian Guild of Music Education Inc.,VIC,,,uni
+73,Box Hill Institute,VIC,,,uni
+74,Chisholm Institute,VIC,,,uni
+75,Collarts,VIC,,,uni
+76,Deakin College,VIC,,,uni
+77,Eastern College Australia,VIC,,,uni
+78,Holmes Institute,VIC,,,uni
+79,Holmesglen Institute of TAFE,VIC,,,uni
+80,ISN Psychology Pty Ltd,VIC,,,uni
+81,LCI Melbourne,VIC,,,uni
+82,La Trobe Melbourne,VIC,,,uni
+83,Leo Cussen Institute,VIC,,,uni
+84,MIECAT,VIC,,,uni
+85,Marcus Oldham College,VIC,,,uni
+86,Melbourne Institute of Technology,VIC,,,uni
+87,Monash College,VIC,,,uni
+88,National Institute of Organisation Dynamics Aust,VIC,,,uni
+89,Northern Melbourne Institute of TAFE,VIC,,,uni
+90,Photography Studies College (Melbourne),VIC,,,uni
+91,Stotts Colleges,VIC,,,uni
+92,The Cairnmillar Institute,VIC,,,uni
+93,VIT (Victorian Institute of Technology),VIC,,,uni
+94,William Angliss Institute of TAFE,VIC,,,uni
+95,CQUniversity,QLD,,,uni
+96,Griffith University,QLD,,,uni
+97,James Cook University,QLD,,,uni
+98,Queensland University of Technology,QLD,,,uni
+99,The University of Queensland,QLD,,,uni
+100,University of Southern Queensland,QLD,,,uni
+101,University of the Sunshine Coast,QLD,,,uni
+102,Bond University,QLD,,,uni
+103,Australian Institute of Professional Counsellors,QLD,,,uni
+104,Christian Heritage College,QLD,,,uni
+105,Endeavour College of Natural Health,QLD,,,uni
+106,Gestalt Therapy Brisbane,QLD,,,uni
+107,Griffith College,QLD,,,uni
+108,Jazz Music Institute,QLD,,,uni
+109,TAFE Queensland,QLD,,,uni
+110,The Performing Arts Conservatory,QLD,,,uni
+111,Curtin University,WA,,,uni
+112,Edith Cowan University,WA,,,uni
+113,Murdoch University,WA,,,uni
+114,The University of Western Australia,WA,,,uni
+115,The University of Notre Dame Australia,WA,,,uni
+116,Other Approved Higher Education Institutions,WA,,,uni
+117,Curtin College,WA,,,uni
+118,Edith Cowan College,WA,,,uni
+119,Engineering Institute of Technology Pty Ltd,WA,,,uni
+120,North Metropolitan TAFE,WA,,,uni
+121,Perth Bible College,WA,,,uni
+122,South Metropolitan TAFE,WA,,,uni
+123,Flinders University,SA,,,uni
+124,The University of Adelaide,SA,,,uni
+125,University of South Australia,SA,,,uni
+126,Torrens University Australia,SA,,,uni
+127,Carnegie Mellon University Australia,SA,,,uni
+128,Other Approved Higher Education Institutions,SA,,,uni
+129,Adelaide Central School of Art,SA,,,uni
+130,Adelaide College of Divinity,SA,,,uni
+131,Australian Institute of Business,SA,,,uni
+132,Eynesbury,SA,,,uni
+133,Ikon Institute of Australia,SA,,,uni
+134,International College of Hotel Management,SA,,,uni
+135,Le Cordon Bleu Australia,SA,,,uni
+136,South Aust Institute of Business & Technology,SA,,,uni
+137,TAFE SA,SA,,,uni
+138,Tabor Adelaide,SA,,,uni
+139,University of Tasmania,TAS,,,uni
+140,Batchelor Institute of Indigenous Tertiary Education,NT,,,uni
+141,Charles Darwin University,NT,,,uni
+142,The Australian National University,ACT,,,uni
+143,University of Canberra,ACT,,,uni
+144,Australian College of Theology,ACT,,,uni
+145,Australian Catholic University,ACT,,,uni
+146,Australia College of Nursing Ltd,ACT,,,uni
+147,Canberra Institute of Technology,ACT,,,uni

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TreeJS - Demo Page</title>
+
+	<script src="../tree.js"></script>
+	<link rel="stylesheet" href="../treejs.css" id="treejs_styles">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<style media="screen">
+		*{
+			box-sizing: border-box;
+			position: relative;
+		}
+
+		body{
+			padding: 0;
+			margin: 0;
+			font-family: sans-serif;
+		}
+
+		header h1{
+			margin: 1em;
+			display: block;
+			text-align: center;
+			font-size: 3rem;
+			color: #fff;
+		}
+
+		header{
+			padding: 5px;
+			margin-bottom: 1em;
+
+			background-color: #159957;
+			background-image: -webkit-linear-gradient(30deg, #155799, #159957);
+			background-image: -o-linear-gradient(30deg, #155799, #159957);
+			background-image: linear-gradient(120deg, #155799, #159957);
+		}
+
+		main{
+			margin: 0 1em;
+			text-align: center;
+		}
+
+		#container{
+			width: 200px;
+			border: 1px solid #ccc;
+			margin: 0 auto;
+			margin-bottom: 1em;
+		}
+
+		.btn{
+			display: inline-block;
+			color: #fff;
+			padding: 10px 20px;
+			background-color: #159957;
+			background-image: -webkit-linear-gradient(30deg, #155799, #159957);
+			background-image: -o-linear-gradient(30deg, #155799, #159957);
+			background-image: linear-gradient(120deg, #155799, #159957);
+			border-color: #fff3;
+			border-style: solid;
+			border-width: 1px;
+			border-radius: 0.3rem;
+			transition: background-image 0.2s;
+			text-decoration: none !important;
+			margin-bottom: 10px;
+		}
+
+		.btn:hover{
+			background-image: -webkit-linear-gradient(30deg, #155799, #5b9915);
+			background-image: -o-linear-gradient(30deg, #155799, #5b9915);
+			background-image: linear-gradient(120deg, #155799, #5b9915);
+		}
+
+		#description{
+			margin-top: 1em;
+		}
+
+		a{
+			color: #0085fc;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>treejs - Demo Page</h1>
+	</header>
+
+	<main>
+		<div id="container"></div>
+
+		
+
+	</main>
+
+	<script>
+		var count = 1;
+
+		var root = new TreeNode("root");
+			var n1 = new TreeNode("1");
+				var n11 = new TreeNode("1.1");
+			var n2 = new TreeNode("2");
+			var n3 = new TreeNode("3");
+				var n31 = new TreeNode("3.1");
+				var n32 = new TreeNode("3.2");
+					var n321 = new TreeNode("3.2.1");
+				var n33 = new TreeNode("3.3");
+
+		root.addChild(n1);
+		root.addChild(n2);
+		root.addChild(n3);
+
+		n1.addChild(n11);
+
+		n3.addChild(n31);
+		n3.addChild(n32);
+		n3.addChild(n33);
+
+
+		n32.addChild(n321);
+
+		var view = new TreeView(root, "#container");
+	</script>
+</body>
+</html>

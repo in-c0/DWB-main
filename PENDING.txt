@@ -1,0 +1,40 @@
+PENDING
+
+XML -> HTML TABLE -> WORD -> HTML 19/02/2024 (HARD)
+AUTOMATIC VAR ASSO TABLE 19/02/2024 (MED)
+Add table support to the left side of the screen 19/02/2024 (EASY) (Done 27/2/2024)
+Add universal var refrencing for non chron refrence 19/02/2024 (PAIN IN THE ASS)
+Update EXCEL with parms of soultions 19/2/2024 (ARMANDO) (Done 21/2/2024)
+Add excel type var refrence 19/2/2024 (Easy) (Done 27/2/2024)
+
+Add a replace function 26/2/2024 (MED?) 
+Add find and replace feature (SET INT VALUE)/update table 26/2/2024(MED-HARD)
+add journal data type 26/2/2024 (MED?)
+Can refrence aswnser and equation functions in itself 26/2/2024(MED)
+Dump solution so insturtor can see and check (base value) 26/2/2024(EASY)
+Add the process check value with base values (ARMANDO) 26/2/2024 BPMN
+fix unqiue refence a1 = a2 26/2/2024 (MED)
+
+
+DATA STORAGE
+%KEY{JSON}
+
+
+PROCESS
+Loads text (Question/Solution) -> change refrence to numbers/companys with vars -> paste into site -> assign vars values
+
+
+
+
+
++ = SUM
+- = SUBTRACT
+* = MULTIPLY
+/ = DIVIDE
+
+COMPANY TEXT STREAM
+
+
+
+
+

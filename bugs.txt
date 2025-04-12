@@ -1,0 +1,3 @@
+race condition 26/09/2024 (DONE 28/09/2024) (SEEMS to only happen if the dev window is open during loading info)
+can some how post student view to staff view? No clue in replication 26/09/2024
+the add vars button sometimes doesn't add it and close the menu 28/09/2024 (DONE 04/10/2024) (Change the way the adder works, and fix a logic bug)
