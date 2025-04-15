@@ -814,32 +814,75 @@ catch (\Throwable $e)
 						<div class="centered2">						
 							<div id="itemHolder" class="row2">
 							<?php
-								try{
-									if(isset($_GET["editing"]) && $_GET["editing"] === "true" && !isset($_GET['studentShow']))
-									{
-										?>
-										<div id="main" class="col text-wrap" contenteditable="true" onchange="setTClean()" style="padding-left:2%;overflow-x:scroll;res">
-											QUESTION TEXT GOES HERE<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-										</div><?php	
-									}
-									else
-									{?>
-										<div id="main" class="col text-wrap" contenteditable="false"  style="padding-left:2%;overflow-x:scroll;"></div>
-										<div class="slides" hidden>
-											<div id="mainSlidesContent"> </div>
-											<div id="mainSlidesOptions"> </div>
+								try {
+								if(isset($_GET["editing"]) && $_GET["editing"] === "true" && !isset($_GET['studentShow'])) {
+									?>																			
+										<!-- Polished Question Content Area (Left Column) -->
+										<div class="container my-4">
+										<div class="card shadow-sm">
+											<!-- Card Header: Optional Question Title -->
+											<div class="card-header bg-primary text-white">
+											<h4 id="questionTitle" class="mb-0">Question Title</h4>
+											</div>
+											<!-- Card Body: Display the Question Text -->
+											<div class="card-body">
+											<div id="main" class="card-text" contenteditable="<?php echo (isset($_GET["editing"]) && $_GET["editing"] === "true" ? 'true' : 'false'); ?>" style="min-height: 200px;">
+												<?php
+												// You can output your dynamic question text here.
+												echo "Insert dynamic question content here.";
+												?>
+											</div>
+											</div>
+											<!-- Card Footer: Additional info like a timestamp or question number -->
+											<div class="card-footer text-muted text-end">
+											<small>Question 1 of 10</small>
+											</div>
 										</div>
-										<?php
-									}
+										</div>
+
+
+									<?php	
+								} else {
+									?>
+																			
+										<!-- Polished Question Content Area (Left Column) -->
+										<div class="container my-4">
+										<div class="card shadow-sm">
+											<!-- Card Header: Optional Question Title -->
+											<div class="card-header bg-primary text-white">
+											<h4 id="questionTitle" class="mb-0">Question Title</h4>
+											</div>
+											<!-- Card Body: Display the Question Text -->
+											<div class="card-body">
+											<div id="main" class="card-text" contenteditable="<?php echo (isset($_GET["editing"]) && $_GET["editing"] === "true" ? 'true' : 'false'); ?>" style="min-height: 200px;">
+												<?php
+												// You can output your dynamic question text here.
+												echo "Insert dynamic question content here.";
+												?>
+											</div>
+											</div>
+											<!-- Card Footer: Additional info like a timestamp or question number -->
+											<div class="card-footer text-muted text-end">
+											<small>Question 1 of 10</small>
+											</div>
+										</div>
+										</div>
+
+
+									<div class="slides" hidden>
+									<div id="mainSlidesContent"> </div>
+									<div id="mainSlidesOptions"> </div>
+									</div>
+									<?php
 								}
-								catch(\Throwable $e)
-								{
-									echo $e;
+								} catch(\Throwable $e) {
+								echo $e;
 								}
 							?>
 							</div>
 						</div>
-					</div>		
+						</div>
+
 					<div id="right" class="right" style="width: 50%; overflow-x: hidden;resize: horizontal;">	
 						<div class="centered2">
 							<div id="itemHolder" class="row2">
